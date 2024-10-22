@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo-image-link logo-image-link" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
+          srcset="images/index/cat-energy-logo/cat-energy-logo-desktop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
+          srcset="images/index/cat-energy-logo/cat-enegry-logo-tablet.svg">
+        <img class="logo-image-link__icon" src="images/index/cat-energy-logo/cat-energy-logo-mobile.svg" width="33"
+          height="38" alt="Логотип Cat Energy">
+      </picture>
+    </a>
+
+    <a class="header__nav-user" href="login.html">
+      Войти
+    </a>
+    <a class="header__nav-basket" href="login.html">
+      Корзина
+    </a>
+
+    <nav class="header__nav  main-nav">
+      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__item-link main-nav__item-link--current" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#">Доставка</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#">О нас</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Страница для старта</h1>
+  </main>
+</body>
+
 </html>
