@@ -1,6 +1,14 @@
-.header {
+.main-header {
+display: flex;
+
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.main-header__user-text {
   text-transform: uppercase;
 }
+
+
+
