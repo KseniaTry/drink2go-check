@@ -1,1 +1,19 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Monserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+picture,
+source {
+  display: contents;
+}
