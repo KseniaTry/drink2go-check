@@ -3,6 +3,7 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 @import "./common/visually-hidden.scss";
+@import "./common/mixins.scss";
 
 /* BLOCKS */
 @import "./blocks/advantages.scss";
@@ -20,3 +21,4 @@
 @import "./blocks/search-result.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/page.scss";
+@import "./blocks/slider.scss";

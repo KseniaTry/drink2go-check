@@ -18,11 +18,13 @@
 
   @media (min-width: $desktop-width) {
     gap: 20px;
+    width: 100%;
   }
 }
 
 .main-nav__item {
-
+margin: 0;
+padding: 0;
 }
 
 .main-nav__item-link {

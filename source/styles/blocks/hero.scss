@@ -1,14 +1,135 @@
 .hero {
   background-color: #F3EBE1;
+
+  padding: 0 20px 60px 20px;
+  text-align: center;
+
+  @media(min-width: $tablet-width) {
+    padding: 60px 20px 308px 20px;
+    margin-bottom: 188px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 30px 40px 84px 40px;
+    margin-bottom: 0;
+  }
+}
+
+.hero__image {
+  margin-bottom: 10px;
+
+  @media((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
+    position: absolute;
+    @include centring-positioned-element;
+    top: 685px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-left: 65px;
+  }
+}
+
+.hero__info-container {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 60px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 0 80px;
+  }
 }
 
 .hero__text {
   margin: 0;
   padding: 0;
+  margin-bottom: 4px;
+
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 133%;
+  color: $basic-purple;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 133%;
+
+  @media(min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 143%;
+
+    margin-bottom: 16px;
+  }
+}
+
+.hero__description {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 143%;
+
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 160%;
+  }
 }
 
 .hero__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.hero__item {
+  @media(min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.hero__item--espresso,
+.hero__item--latte {
+  display: none;
+}
+
+.hero__order-container {
+  display: flex;
+  align-items: center;
+
+  margin: 0 25px;
+}
+
+.hero__price-before {
+  text-decoration: line-through;
+  margin-right: 6px;
+
+  font-size: 16px;
+  line-height: 200%;
+  color: #7859cf;
+}
+
+.hero__price-after {
+  margin-right: 20px;
+
+  font-family: "Montserrat Semi Bold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.hero__order {
+  width: 113px;
+}
+
+.hero__toggles {
+  display: none;
 }
