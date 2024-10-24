@@ -1,0 +1,65 @@
+.advantages {
+  margin: 50px 20px 60px 20px;
+}
+
+.advantages__title {
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 133%;
+  color: $basic-purple;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__text {
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__item {
+  position: relative;
+  // margin-bottom: 98px;
+  text-align: center;
+}
+
+.advantages__item-title {
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 178%;
+
+  margin-bottom: 4px;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 143%;
+}
+
+.advantages__item--clock::before {
+  mask-image: url("../../icons/clock-icon.svg");
+}
+
+.advantages__item--lightning::before {
+  mask-image: url("../icons/stack.svg#lightning-icon");
+}
+
+.advantages__item--pocket::before {
+  mask-image: url("icons/stack.svg#pocket-icon");
+}
+
+.advantages__item--leaf::before {
+  mask-image: url("icons/stack.svg#leaf-icon");
+}
