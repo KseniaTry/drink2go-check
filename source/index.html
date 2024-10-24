@@ -12,32 +12,36 @@
 
 <body class="page__body">
   <header class="main-header" data-test="header">
-    <a class="main-header__logo logo" href="index.html">
-      <!-- <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
-          srcset="images/index/cat-energy-logo/cat-energy-logo-desktop.svg">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
-          srcset="images/index/cat-energy-logo/cat-enegry-logo-tablet.svg"> -->
-      <img class="logo__icon" src="images/index/cat-energy-logo/cat-energy-logo-mobile.svg" width="33" height="38"
-        alt="Логотип Drink2Go">
-      <!-- </picture> -->
+    <div class="main-header__logo-container">
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml"
+          srcset="images/logo/drink2go-logo-desktop.svg">
+        <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml"
+          srcset="images/logo/drink2go-logo-tablet.svg">
+        <img class="main-header__logo-icon" src="images/logo/drink2go-logo-mobile.svg" width="32" height="36"
+          alt="Логотип Drink2Go">
+      </picture>
     </a>
+    <p class="main-header__logo-text">Интернет-магазин кофейных напитков</p>
+  </div>
 
-    <a class="main-header__user" href="login.html">
+    <div class="main-header__user-container">
+    <a class="main-header__user main-header__user--login" href="#">
       <svg class="main-header__user-icon" width="16" height="16">
-        <use href="img/sprite.svg#icon-login"></use>
+        <use href="icons/stack.svg#user-icon"></use>
       </svg>
-      <span class="main-header__user-text visually-hidden">Войти</span>
+      <span class="main-header__user-text">Войти</span>
     </a>
-    <a class="main-header__basket" href="login.html">
-      <svg class="main-header__basket-icon" width="16" height="16">
-        <use href="img/sprite.svg#icon-login"></use>
+    <a class="main-header__user main-header__user--basket" href="#">
+      <svg class="main-header__user-icon" width="16" height="16">
+        <use href="icons/stack.svg#basket-icon"></use>
       </svg>
-      <span class="main-header__basket-text visually-hidden">Корзина</span>
+      <span class="main-header__user-text">Корзина</span>
     </a>
 
-    <nav class="main-header__nav  main-nav">
-      <button class="header__toggle js-toggle-button" type="button"><span class="visually-hidden">Открыть
+    <nav class="main-header__nav main-nav">
+      <button class="main-header__toggle js-toggle-button" type="button"><span class="visually-hidden">Открыть
           меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -54,6 +58,7 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main class="page__main">

@@ -3,6 +3,9 @@
   padding: 0;
   list-style-type: none;
 
+  font-size: 12px;
+  line-height: 16px;
+
   @media (max-width: $mobile-width-max) {
     display: none;
   }
@@ -11,13 +14,39 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
   }
 }
 
-
 .main-nav__item {
+
+}
+
+.main-nav__item-link {
+  display: block;
+
+  padding: 32px 20px;
+
+  text-align: center;
+  color: $basic-black;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav__item-link--current {
+  padding-bottom: 0;
+  color: #7859CF;
+}
+
+.main-nav__item-link--current::after {
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 30px;
+    background-color: #7859CF;
 }
 
 
