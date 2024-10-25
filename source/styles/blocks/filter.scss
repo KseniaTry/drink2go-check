@@ -1,0 +1,111 @@
+.filter {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.filter__title {
+  font-family: "Montserrat Semi Bold", "Arial", sans-serif;
+
+  margin-bottom: 20px;
+}
+
+.filter__slider {
+  margin-bottom: 24px;
+}
+
+.filter__price {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter__price::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-4px);
+  width: 8px;
+  height: 2px;
+  background-color: $basic-gray;
+}
+
+.filter__price-input {
+  width: 118px;
+  padding: 8px 10px;
+
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  text-align: center;
+  border: 2px solid $secondary-purple;
+  border-radius: 4px;
+}
+
+.filter__price-input--min {
+  margin-right: 44px;
+}
+
+// фильтр "количество молока"
+.filter__item {
+  margin-bottom: 20px;
+}
+
+.filter__milk-label {
+  display: flex;
+  gap: 10px;
+}
+
+.filter__custom-radio {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $secondary-purple;
+  border-radius: 50%;
+}
+
+.filter__custom-radio::before {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 17px;
+  height: 17px;
+  background-color: $secondary-purple;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filter__milk-input:checked+.filter__custom-radio::before {
+  display: block;
+}
+
+.filter__milk-input:disabled+.filter__custom-radio {
+  border: 2px solid $basic-light-gray;
+}
+
+.filter__milk-label:has(.filter__milk-input:disabled) {
+  color: $basic-gray;
+}
+
+.filter__milk-input {
+  display: none;
+}
+
+// кнопки
+.filter__apply {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.filter__reset {
+  width: 100%;
+}
+

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -196,79 +197,77 @@
     <!-- КАТАЛОГ. Блок: фильтры -->
     <section class="catalog" data-test="catalog">
       <h2 class="catalog__title">Каталог</h2>
-      <p>Каталог кофейных напитков</p>
+      <p class="catalog__text">Каталог кофейных напитков</p>
       <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="catalog__filter filter">
           <legend class="filter__title">Цена</legend>
-
-          <div class="filter__range range">
-            <div class="range__scale">
-              <div class="range__bar">
-                <button class="range__toggle toggle-min" type="button"><span class="visually-hidden">Задать минимальную
-                    цену</span></button>
-                <button class="range__toggle toggle-max" type="button"><span class="visually-hidden">Задать максимальную
-                    цену</span></button>
-              </div>
-            </div>
-          </div>
-
+          <div class="filter__slider"></div>
           <div class="filter__price">
-            <label class="filter__price-label label-min" for="price-min"></label>
-            <input class="filter__price-input input-min" type="number" name="price-min" id="price-min" value="0">
+            <label class="filter__price-label filter__price-label--min" for="price-min"></label>
+            <input class="filter__price-input filter__price-input--min" type="number" name="price-min" id="price-min"
+              min="0" max="900" value="0">
 
-            <label class="filter__price-label label-max" for="price-max"></label>
-            <input class="filter__price-input input-max" type="number" name="price-max" id="price-max" value="900">
+            <label class="filter__price-label filter__price-label--max" for="price-max"></label>
+            <input class="filter__price-input filter__price-input--max" type="number" name="price-max" id="price-max"
+              min="0" max="900" value="900">
           </div>
-
         </fieldset>
 
         <fieldset class="catalog__filter filter">
           <legend class="filter__title">Количество молока</legend>
           <div class="filter__item">
-            <input class="filter__input" type="radio" id="no-matter" name="milk-count" value="no-matter" checked>
-            <label class="filter__label" for="no-matter">Неважно</label>
+            <label class="filter__milk-label" for="no-matter">
+            <input class="filter__milk-input" type="radio" id="no-matter" name="milk-count" value="no-matter" checked>
+            <span class="filter__custom-radio"></span>
+            Неважно</label>
           </div>
           <div class="filter__item">
-            <input class="filter__input" type="radio" id="animal" name="milk-count" value="animal">
-            <label class="filter__label" for="animal">Только животное</label>
+            <label class="filter__milk-label" for="animal">
+            <input class="filter__milk-input" type="radio" id="animal" name="milk-count" value="animal">
+            <span class="filter__custom-radio"></span>
+          Только животное</label>
           </div>
           <div class="filter__item">
-            <input class="filter__input" type="radio" id="plant" name="milk-count" value="plant">
-            <label class="filter__label" for="plant">Только растительное</label>
+            <label class="filter__milk-label" for="plant">
+            <input class="filter__milk-input" type="radio" id="plant" name="milk-count" value="plant">
+            <span class="filter__custom-radio"></span>
+           Только растительное</label>
           </div>
           <div class="filter__item">
-            <input class="filter__input" type="radio" id="no-milk" name="milk-count" value="no-milk" disabled>
-            <label class="filter__label" for="no-milk">Без молока</label>
+            <label class="filter__milk-label" for="no-milk">
+            <input class="filter__milk-input" type="radio" id="no-milk" name="milk-count" value="no-milk" disabled>
+            <span class="filter__custom-radio"></span>
+         Без молока</label>
           </div>
         </fieldset>
 
         <fieldset class="catalog__filter filter">
-          <legend class="filter-title">Страна произрастания</legend>
+          <legend class="filter__title">Страна произрастания</legend>
           <div class="filter__item">
-            <input class="filter__input" type="checkbox" id="brasil" name="country" value="brasil" checked>
-            <label class="filter__label" for="brasil">Бразилия</label>
+            <input class="filter__country-input" type="checkbox" id="brasil" name="country" value="brasil" checked>
+            <label class="filter__country-label" for="brasil">Бразилия</label>
           </div>
           <div class="filter__item">
-            <input class="filter__input" type="checkbox" id="ethiopia" name="country" value="ethiopia">
-            <label class="filter__label" for="ethiopia">Эфиопия</label>
+            <input class="filter__country-input" type="checkbox" id="ethiopia" name="country" value="ethiopia">
+            <label class="filter__country-label" for="ethiopia">Эфиопия</label>
           </div>
           <div class="filter__item">
-            <input class="filter__input" type="checkbox" id="columbia" name="country" value="columbia">
-            <label class="filter__label" for="columbia">Колумбия</label>
+            <input class="filter__country-input" type="checkbox" id="columbia" name="country" value="columbia">
+            <label class="filter__country-label" for="columbia">Колумбия</label>
           </div>
           <div class="filter__item">
-            <input class="filter__input" type="checkbox" id="costa-rica" name="country" value="costa-rica">
-            <label class="filter__label" for="costa-rica">Коста-Рика</label>
+            <input class="filter__country-input" type="checkbox" id="costa-rica" name="country" value="costa-rica">
+            <label class="filter__country-label" for="costa-rica">Коста-Рика</label>
           </div>
           <div class="filter__item">
-            <input class="filter__input" type="checkbox" id="peru" name="country" value="peru" disabled>
-            <label class="filter__label" for="peru">Перу</label>
+            <input class="filter__country-input" type="checkbox" id="peru" name="country" value="peru" disabled>
+            <label class="filter__country-label" for="peru">Перу</label>
           </div>
         </fieldset>
 
         <div class="filter__buttons-container">
-          <button class="filter__apply button" type="submit">Применить</button>
-          <button class="filter__reset button" type="reset">Сбросить</button>
+          <button class="filter__apply button button--primary" type="submit">Применить</button>
+          <button class="filter__reset button button--secondary" type="reset">Сбросить</button>
         </div>
       </form>
     </section>
@@ -535,6 +534,8 @@
           class="visually-hidden">Логотип HTML-academy</span></a>
     </div>
   </footer>
+
+  <script src="vendor/nouislider/nouislider.js"></script>
 </body>
 
 </html>

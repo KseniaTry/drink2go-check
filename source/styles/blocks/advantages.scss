@@ -14,15 +14,15 @@
 }
 
 .advantages__title {
+  margin: 0;
+  margin-bottom: 4px;
+
   font-family: "Montserrat Bold", "Arial", sans-serif;
   font-size: 12px;
   line-height: 133%;
   color: $basic-purple;
   text-transform: uppercase;
   text-align: center;
-
-  margin: 0;
-  margin-bottom: 4px;
 }
 
 .advantages__text {
@@ -139,11 +139,6 @@
 
   @media((min-width: $tablet-width) and (max-width: $tablet-width-max)){
     left: 0;
-  }
-
-  @media(min-width: $desktop-width) {
-
-
   }
 }
 
