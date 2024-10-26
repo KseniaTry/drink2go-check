@@ -1,0 +1,104 @@
+.main-footer {
+  margin-top: 20px;
+}
+
+.main-footer__container--social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__container {
+  position: relative;
+  margin-bottom: 41px;
+}
+
+.main-footer__container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  transform: translateY(20px);
+  background-color: #F0EBFF;
+}
+
+.main-footer__logo-link {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.main-footer__logo-text {
+  display: none;
+}
+
+// интернет-магазин и медиа
+.main-footer__title {
+  margin: 0 20px 20px 20px;
+
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  color: $basic-purple;
+}
+
+.main-footer__list {
+  margin: 0 20px 0 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-footer__item {
+  margin-bottom: 12px;
+}
+
+.main-footer__link {
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 143%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+// контакты
+.main-footer__icon {
+  background-size: 13px 16px;
+  background-repeat: no-repeat;
+  background-position: left 20px top;
+}
+
+.main-footer__address {
+  padding: 0 39px;
+  margin-bottom: 16px;
+  background-image: url("../../icons/address-icon.svg");
+
+}
+
+.main-footer__phone-link {
+  padding: 0 39px;
+  text-decoration: none;
+  font-family: $montserrat-font;
+  color: $basic-black;
+  background-image: url("../../icons/phone-icon.svg");
+}
+
+// developer logo
+.main-footer__developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.main-footer__developer-text {
+  margin: 0;
+margin-right: 3px ;
+
+  color: $basic-gray;
+}
+
+.main-footer__developer-logo-link {
+  text-decoration: none;
+  line-height: 16px;
+}

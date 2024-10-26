@@ -1,0 +1,38 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 160px;
+
+  margin: 0 20px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-list__item {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.social-list__link {
+  display: block;
+  background-color: $basic-gray;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.social-list__link--vkontakte {
+  mask-image: url("../../icons/vk-icon.svg");
+}
+
+.social-list__link--pinterest {
+  mask-image: url("../../icons/pinterest-icon.svg");
+}
+
+.social-list__link--odnoklassniki {
+  mask-image: url("../../icons/odnoklassniki-icon.svg");
+}

@@ -457,9 +457,17 @@
 
   <!-- Блок: ФУТЕР -->
   <footer class="main-footer" data-test="footer">
-    <div class="main-footer__container">
-      <a class="main-footer__logo-link logo-text-link" href="index.html"><span class="visually-hidden">Логотип
-          Drink2Go</span></a>
+    <div class="main-footer__container main-footer__container--social">
+      <!-- Логотип -->
+      <a class="main-footer__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 768px)" width="170" height="36" type="image/svg+xml"
+            srcset="images/logo/drink2go-logo-desktop.svg">
+          <img class="main-footer__logo-icon" src="images/logo/drink2go-logo-tablet.svg" width="82" height="36"
+            alt="Логотип Drink2Go">
+        </picture>
+        <span class="main-footer__logo-text">Интернет-магазин кофейных напитков</span>
+       </a>
 
       <!-- Соцсети -->
       <ul class="main-footer__social-list social-list">
@@ -468,19 +476,19 @@
               class="visually-hidden">Мы во Vkontakte</span></a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube"
+          <a class="social-list__link social-list__link--pinterest"
             href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Pinterest</span></a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy"><span
+          <a class="social-list__link social-list__link--odnoklassniki" href="https://t.me/htmlacademy"><span
               class="visually-hidden">Мы в Одноклассниках</span></a>
         </li>
       </ul>
     </div>
 
     <!-- Интернет-магазин -->
-    <div class="main-footer__block main-footer__block-nav">
-      <h3 class="main-footer__header">Интернет-магазин</h3>
+    <div class="main-footer__container">
+      <h3 class="main-footer__title">Интернет-магазин</h3>
       <ul class="main-footer__list">
         <li class="main-footer__item">
           <a class="main-footer__link" href="index.html">Главная</a>
@@ -498,33 +506,35 @@
     </div>
 
     <!-- Медиа -->
-    <div class="main-footer__block main-footer__block-media">
-      <h3 class="main-footer__header">Медиа</h3>
+    <div class="main-footer__container">
+      <h3 class="main-footer__title">Медиа</h3>
       <ul class="main-footer__list">
         <li class="main-footer__item">
-          <a class="social-list__item" href="https://vk.com/htmlacademy">Блог</a>
+          <a class="main-footer__link" href="#">Блог</a>
         </li>
         <li class="main-footer__item">
-          <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">Информация для СМИ</a>
+          <a class="main-footer__link" href="#">Информация для СМИ</a>
         </li>
         <li class="main-footer__item">
-          <a class="social-list__link" href="https://t.me/htmlacademy">Правовая информация</a>
+          <a class="main-footer__link" href="#">Правовая информация</a>
         </li>
       </ul>
     </div>
 
     <!-- Контакты -->
-    <div class="main-footer__contacts">
-      <h3 class="main-footer__header">Контакты</h3>
-      <address class="main-footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
-      <a class="main-footer__phone-link" href="tel:+79999999999">+7 (999) 999-99-99</a>
+    <div class="main-footer__container">
+      <h3 class="main-footer__title">Контакты</h3>
+      <address class="main-footer__address main-footer__icon">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+      <a class="main-footer__phone-link main-footer__icon" href="tel:+79999999999">+7 (999) 999-99-99</a>
     </div>
 
     <!-- Девелопер лого -->
-    <div class="main-footer__developer developer">
-      <p class="developer__text">Разработано в</p>
-      <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/adaptive"><span
-          class="visually-hidden">Логотип HTML-academy</span></a>
+    <div class="main-footer__developer ">
+      <p class="main-footer__developer-text">Разработано в</p>
+      <a class="main-footer__developer-logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="main-footer__developer-logo-icon" src="images/developer-logo/html-academy-logo-icon.svg" width="112" height="16"
+        alt="Логотип HTML-Academy">
+      </a>
     </div>
   </footer>
 
