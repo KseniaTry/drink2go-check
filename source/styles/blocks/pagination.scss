@@ -1,0 +1,50 @@
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pagination__item {
+  min-width: 40px;
+  height: 40px;
+  padding: 8px;
+
+  background-color: $basic-white;
+  text-align: center;
+}
+
+.pagination__item--back,
+.pagination__item--forward {
+  background-size: 6px 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination__item--back {
+  background-image: url("../../icons/pagination-back-icon.svg");
+}
+
+.pagination__item--forward {
+  background-image: url("../../icons/pagination-forward-icon.svg");
+}
+
+.pagination__link {
+  text-decoration: none;
+  font-family: $montserrat-font;
+  font-size: 16px;
+  line-height: 150%;
+  color: $basic-purple;
+}
+
+.pagination__link--current {
+  font-family: "Montserrat Semi Bold";
+color: $basic-black;
+}
+
+.pagination__text {
+  display: none;
+}
