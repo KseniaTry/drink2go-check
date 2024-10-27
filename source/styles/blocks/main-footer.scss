@@ -1,35 +1,88 @@
 .main-footer {
   margin-top: 20px;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin: 0 20px;
+    margin-top: 40px;
+  }
 }
 
 .main-footer__container--social {
   display: flex;
   justify-content: space-between;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media(min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .main-footer__container {
   position: relative;
   margin-bottom: 41px;
+
+  @media(min-width: $tablet-width) {
+    width: 223px;
+    margin-bottom: 2px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 317px;
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__container:first-child {
+  @media((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
+    width: 100%;
+  }
 }
 
 .main-footer__container::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  bottom: 0;
-  transform: translateY(20px);
-  background-color: #F0EBFF;
+  @media(max-width: $mobile-width-max) {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(20px);
+    background-color: #F0EBFF;
+  }
 }
 
 .main-footer__logo-link {
   text-decoration: none;
   margin-left: 20px;
+
+  @media(min-width: $desktop-width) {
+  margin-bottom: 50px;
+  }
 }
 
 .main-footer__logo-text {
   display: none;
+
+  @media(min-width: $desktop-width) {
+    display: block;
+    margin-top: 10px;
+
+    font-family: $montserrat-font;
+    font-size: 14px;
+    line-height: 143%;
+    color: $basic-black;
+  }
 }
 
 // интернет-магазин и медиа
@@ -89,6 +142,11 @@
 
   padding: 0 20px;
   margin-bottom: 30px;
+
+  @media(min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .main-footer__developer-text {
