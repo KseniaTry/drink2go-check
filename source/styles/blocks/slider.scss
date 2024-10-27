@@ -1,5 +1,13 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .slider__toggle {
   position: relative;
+  border: none;
+  background-color: transparent;
 }
 
 .slider__toggle--right::before {
@@ -17,3 +25,12 @@
   height: 20px;
   background-image: url("../../icons/arrow-slider-left-icon.svg");
 }
+
+.slider__toggle-number {
+  display: none;
+}
+
+slider__toggle--current {
+  display: none;
+}
+
