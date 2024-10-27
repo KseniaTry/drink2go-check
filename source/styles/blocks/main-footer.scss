@@ -1,7 +1,7 @@
 .main-footer {
   margin-top: 20px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -9,7 +9,7 @@
     margin-top: 42px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0 20px;
     margin-top: 40px;
   }
@@ -19,11 +19,11 @@
   display: flex;
   justify-content: space-between;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: column;
   }
 }
@@ -32,25 +32,25 @@
   position: relative;
   margin-bottom: 41px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 223px;
     margin-bottom: 2px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 317px;
     margin-bottom: 0;
   }
 }
 
 .main-footer__container:first-child {
-  @media((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
+  @media ((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
     width: 100%;
   }
 }
 
 .main-footer__container::after {
-  @media(max-width: $mobile-width-max) {
+  @media (max-width: $mobile-width-max) {
     content: "";
     display: block;
     position: absolute;
@@ -58,7 +58,7 @@
     width: 100%;
     bottom: 0;
     transform: translateY(20px);
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
 }
 
@@ -66,15 +66,15 @@
   text-decoration: none;
   margin-left: 20px;
 
-  @media(min-width: $desktop-width) {
-  margin-bottom: 50px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
 .main-footer__logo-text {
   display: none;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
     margin-top: 10px;
 
@@ -87,14 +87,14 @@
 
 // интернет-магазин и медиа
 .main-footer__title {
-  margin: 0 20px 20px 20px;
+  margin: 0 20px 20px;
 
   font-family: "Montserrat Bold", "Arial", sans-serif;
   color: $basic-purple;
 }
 
 .main-footer__list {
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
   padding: 0;
   list-style-type: none;
 }
@@ -123,7 +123,6 @@
   padding: 0 39px;
   margin-bottom: 16px;
   background-image: url("../../icons/address-icon.svg");
-
 }
 
 .main-footer__phone-link {
@@ -143,7 +142,7 @@
   padding: 0 20px;
   margin-bottom: 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 40px;
   }

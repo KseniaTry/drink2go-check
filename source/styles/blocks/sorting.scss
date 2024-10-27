@@ -20,11 +20,9 @@
   line-height: 150%;
   color: $basic-purple;
   background-color: $secondary-light-gray;
-  background-image: url(../../icons/arrow-icon.svg);
+  background-image: url("../../icons/arrow-icon.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: right 10px center;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }

@@ -12,13 +12,11 @@
 }
 
 .button--primary {
-  background-color: #7859cf;
-  color: #ffffff;
-  }
+  background-color: $basic-purple;
+  color: $basic-white;
+}
 
 .button--secondary {
-  background-color: #ffffff;
-  color: #7859cf;
-  }
-
-
+  background-color: $basic-white;
+  color: $basic-purple;
+}

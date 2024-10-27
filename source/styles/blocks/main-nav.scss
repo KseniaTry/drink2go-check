@@ -23,13 +23,12 @@
 }
 
 .main-nav__item {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__item-link {
   display: block;
-
   padding: 32px 20px;
 
   text-align: center;
@@ -40,15 +39,13 @@ padding: 0;
 
 .main-nav__item-link--current {
   padding-bottom: 0;
-  color: #7859CF;
+  color: $basic-purple;
 }
 
 .main-nav__item-link--current::after {
-    content: "";
-    display: block;
-    height: 2px;
-    margin-top: 30px;
-    background-color: #7859CF;
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 30px;
+  background-color: $basic-purple;
 }
-
-

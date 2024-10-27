@@ -1,16 +1,16 @@
 .hero {
-  background-color: #F3EBE1;
+  background-color: #f3ebe1;
 
-  padding: 0 20px 60px 20px;
+  padding: 0 20px 60px;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
-    padding: 60px 20px 308px 20px;
+  @media (min-width: $tablet-width) {
+    padding: 60px 20px 308px;
     margin-bottom: 188px;
   }
 
-  @media(min-width: $desktop-width) {
-    padding: 30px 40px 84px 40px;
+  @media (min-width: $desktop-width) {
+    padding: 30px 40px 84px;
     margin-bottom: 0;
   }
 }
@@ -18,19 +18,20 @@
 .hero__image {
   margin-bottom: 10px;
 
-  @media((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
+  @media ((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
     position: absolute;
+
     @include centring-positioned-element;
     top: 685px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 65px;
   }
 }
 
 .hero__info-container {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +40,7 @@
     padding: 0 60px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 80px;
   }
 }
@@ -65,7 +66,7 @@
   font-size: 36px;
   line-height: 133%;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 56px;
     line-height: 143%;
 
@@ -79,7 +80,7 @@
   font-size: 14px;
   line-height: 143%;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 160%;
   }
@@ -92,7 +93,7 @@
 }
 
 .hero__item {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
   }
 }
@@ -115,7 +116,7 @@
 
   font-size: 16px;
   line-height: 200%;
-  color: #7859cf;
+  color: $basic-purple;
 }
 
 .hero__price-after {
@@ -128,8 +129,4 @@
 
 .hero__order {
   width: 113px;
-}
-
-.hero__toggles {
-  display: none;
 }

@@ -7,8 +7,8 @@
   font-size: 16px;
   line-height: 150%;
 
-  @media(min-width: $tablet-width) {
-   margin-bottom: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -51,11 +51,11 @@
   border: 2px solid $secondary-purple;
   border-radius: 4px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 87px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 100%;
   }
 }
@@ -100,11 +100,11 @@
   transform: translate(-50%, -50%);
 }
 
-.filter__milk-input:checked+.filter__custom-radio::before {
+.filter__milk-input:checked + .filter__custom-radio::before {
   display: block;
 }
 
-.filter__milk-input:disabled+.filter__custom-radio {
+.filter__milk-input:disabled + .filter__custom-radio {
   border: 2px solid $basic-light-gray;
 }
 
@@ -118,7 +118,7 @@
 
 // кнопки
 .filter__buttons-container {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,8 +127,8 @@
     margin-top: 10px;
   }
 
-  @media(min-width: $desktop-width) {
-gap: 30px;
+  @media (min-width: $desktop-width) {
+    gap: 30px;
   }
 }
 
@@ -136,12 +136,11 @@ gap: 30px;
   width: 100%;
   margin-bottom: 20px;
 
-  @media(min-width: $tablet-width) {
-   margin-bottom: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
 .filter__reset {
   width: 100%;
 }
-
