@@ -87,18 +87,17 @@
   justify-content: center;
   align-items: center;
 
-padding: 0 20px;
+  padding: 0 20px;
   margin-bottom: 30px;
 }
 
 .main-footer__developer-text {
   margin: 0;
-margin-right: 3px ;
+  margin-right: 3px;
 
   color: $basic-gray;
 }
 
-.main-footer__developer-logo-link {
-  text-decoration: none;
-  line-height: 16px;
+.main-footer__developer-logo-icon {
+  margin-top: 7px;
 }

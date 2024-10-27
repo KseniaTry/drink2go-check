@@ -6,6 +6,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media(min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .pagination__item {
@@ -22,14 +26,23 @@
   background-size: 6px 10px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media(min-width: $tablet-width){
+    padding: 6px 20px;
+  }
+
 }
 
 .pagination__item--back {
+  @media(max-width: $mobile-width-max){
   background-image: url("../../icons/pagination-back-icon.svg");
+  }
 }
 
 .pagination__item--forward {
+  @media(max-width: $mobile-width-max){
   background-image: url("../../icons/pagination-forward-icon.svg");
+  }
 }
 
 .pagination__link {
@@ -47,4 +60,8 @@ color: $basic-black;
 
 .pagination__text {
   display: none;
+
+  @media(min-width: $tablet-width){
+    display: block;
+  }
 }

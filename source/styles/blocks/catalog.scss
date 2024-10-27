@@ -1,6 +1,14 @@
 .catalog {
   background-color: $secondary-light-gray;
   padding: 50px 20px 40px 20px;
+
+  @media(min-width: $tablet-width) {
+    padding-bottom: 90px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-bottom: 120px;
+  }
 }
 
 .catalog__title {
@@ -23,8 +31,104 @@
   font-size: 24px;
   line-height: 150%;
   text-align: center;
+
+  @media(min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 142%;
+  }
+
+  @media(min-width: $desktop-width) {
+  margin-bottom: 40px;
+  }
+}
+
+.catalog__main-container {
+  @media(min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+  }
+}
+
+.catalog__filter-form {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 318px;
+  }
 }
 
 .catalog__filter {
   margin-bottom: 30px;
+
+  @media(min-width: $tablet-width) {
+    width: 222px;
+  }
+
+  @media(min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.catalog__sorting-container {
+  @media(min-width: $desktop-width) {
+    width: 1011px;
+  }
+}
+
+.catalog__sorting {
+  padding-bottom: 20px;
+
+  @media(min-width: $tablet-width) {
+    width: 282px;
+    margin-left: auto;
+    padding-bottom: 24px;
+  }
+}
+
+.catalog__cards-container {
+  padding-bottom: 20px;
+  background-color: $secondary-light-gray;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 70px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
+}
+
+.catalog__card {
+  margin-bottom: 20px;
+  // width: 349px;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 349px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 317px;
+  }
+}
+
+.catalog__pagination {
+  @media(min-width: $tablet-width) {
+    width: 395px;
+    margin-left: auto;
+  }
 }
