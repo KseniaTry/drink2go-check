@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   margin: -2 auto;
-  width: 100%;
+  justify-content: space-between;
 
   @media (max-width: $mobile-width-max) {
-    justify-content: space-between;
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
@@ -62,11 +62,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
-    width: 75%;
+    width: 84%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 63%;
+    width: 67%;
+    gap: 25px;
   }
 }
 
