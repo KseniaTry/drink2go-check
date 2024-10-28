@@ -157,16 +157,17 @@
 .hero__toggles {
   position: absolute;
   width: 100%;
-  top: 75%;
+  top: 0;
   left: 0;
+  transform: translateY(361px);
 
   @media (min-width: $tablet-width) {
-    top: 47%;
     padding: 0 30px;
+    transform: translateY(375px);
   }
 
   @media (min-width: $desktop-width) {
-    top: 34%;
     padding: 0 33px;
+    transform: translateY(414px);
   }
 }
