@@ -49,3 +49,16 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.main-header__nav--opened .main-header__toggle {
+  transform: rotate(-45deg);
+}
+
+.main-header__nav--opened .main-header__toggle::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.main-header__nav--opened .main-header__toggle::before {
+  display: none;
+}
