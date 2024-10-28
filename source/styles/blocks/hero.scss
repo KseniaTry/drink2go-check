@@ -81,7 +81,6 @@
     font-size: 57px;
     margin-bottom: 10px;
   }
-
 }
 
 .hero__description {
@@ -96,6 +95,7 @@
     line-height: 160%;
     width: 608px;
     text-align: center;
+    letter-spacing: 0.02em;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,11 +158,11 @@
   position: absolute;
   width: 100%;
   top: 60%;
-  transform: translateX(-20px);
+  left: 0;
 
   @media (min-width: $tablet-width) {
     top: 62%;
-    padding: 0px 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {

@@ -19,7 +19,7 @@ const createSlider = () => {
       min: 0,
       max: 900,
     },
-    start: [0, 750],
+    start: [0, 770],
     step: 1,
     connect: true,
     format: {
