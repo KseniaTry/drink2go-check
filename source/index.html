@@ -27,25 +27,25 @@
     </div>
 
     <div class="main-header__user-container">
-      <a class="main-header__user main-header__user--login" href="#">
-        <svg class="main-header__user-icon" width="16" height="16">
-          <use href="icons/stack.svg#user-icon"></use>
-        </svg>
-        <span class="main-header__user-text">Войти</span>
-      </a>
       <a class="main-header__user main-header__user--basket" href="#">
         <svg class="main-header__user-icon" width="16" height="16">
           <use href="icons/stack.svg#basket-icon"></use>
         </svg>
         <span class="main-header__user-text">Корзина</span>
       </a>
+      <a class="main-header__user main-header__user--login" href="#">
+        <svg class="main-header__user-icon" width="16" height="16">
+          <use href="icons/stack.svg#user-icon"></use>
+        </svg>
+        <span class="main-header__user-text">Войти</span>
+      </a>
 
       <nav class="main-header__nav main-nav">
         <button class="main-header__toggle js-toggle-button" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--current" href="index.html">Главная</a>
+          <li class="main-nav__item  main-nav__item--current">
+            <a class="main-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Каталог</a>
@@ -180,7 +180,7 @@
         </li>
         <li class="advantages__item advantages__item--pocket">
           <h3 class="advantages__item-title">Удобство</h3>
-          <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
+          <p class="advantages__description">Легко помещается и в карман,<br> и в маленькую сумочку</p>
         </li>
         <li class="advantages__item advantages__item--lightning">
           <h3 class="advantages__item-title">Бодрость</h3>
@@ -188,7 +188,7 @@
         </li>
         <li class="advantages__item advantages__item--leaf">
           <h3 class="advantages__item-title">Экологичность</h3>
-          <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
+          <p class="advantages__description">Вся упаковка сделана<br> из перерабатываемых материалов</p>
         </li>
       </ul>
     </section>
@@ -492,13 +492,13 @@
       <h3 class="main-footer__title">Интернет-магазин</h3>
       <ul class="main-footer__list">
         <li class="main-footer__item">
-          <a class="main-footer__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="#">Каталог</a>
+          <a class="main-footer__link" href="index.html">Каталог</a>
         </li>
         <li class="main-footer__item">
           <a class="main-footer__link" href="#">Доставка</a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">Способы оплаты</a>
         </li>
         <li class="main-footer__item">
           <a class="main-footer__link" href="#">О нас</a>

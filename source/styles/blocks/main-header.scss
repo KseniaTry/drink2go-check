@@ -1,26 +1,35 @@
 .main-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: -2 auto;
+  width: 100%;
+
+  @media (max-width: $mobile-width-max) {
+    justify-content: space-between;
+  }
 
   @media (min-width: $tablet-width) {
-    margin: 0 20px;
+    margin: -2px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 40px;
+    margin: -2px 40px;
   }
 }
 
 .main-header__logo-container {
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 68px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    margin-right: 166px;
   }
 }
 
@@ -57,7 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 60%;
+    width: 63%;
   }
 }
 
@@ -66,13 +75,13 @@
   width: 60px;
 
   text-decoration: none;
+  line-height: 15px;
   color: $basic-black;
 
   @media (min-width: $desktop-width) {
     position: relative;
     padding: 0;
     margin: 32px 20px 32px 40px;
-    width: auto;
   }
 }
 
@@ -100,7 +109,6 @@
     align-items: center;
 
     width: 100%;
-    margin-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,8 +120,8 @@
   position: absolute;
   width: 16px;
   height: 2px;
-  top: 30px;
-  right: 21px;
+  top: 29px;
+  right: 22px;
   background-color: $basic-black;
   border: none;
 
@@ -130,11 +138,11 @@
   }
 
   &::after {
-    top: 8px;
+    top: 6px;
   }
 
   &::before {
-    top: -8px;
+    top: -6px;
   }
 
   @media (min-width: $tablet-width) {

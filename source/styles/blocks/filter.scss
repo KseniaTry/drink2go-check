@@ -20,7 +20,12 @@
 
 // цена
 .filter__slider {
-  margin-bottom: 24px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width){
+    margin-bottom: 31px;
+  }
 }
 
 .filter__price {
@@ -134,7 +139,8 @@
 
 .filter__apply {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -143,4 +149,9 @@
 
 .filter__reset {
   width: 100%;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

@@ -44,6 +44,8 @@
 }
 
 .main-footer__container:first-child {
+  margin-bottom: 49px;
+
   @media ((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
     width: 100%;
   }
@@ -87,10 +89,13 @@
 
 // интернет-магазин и медиа
 .main-footer__title {
-  margin: 0 20px 20px;
+  margin: 0 20px 15px;
 
   font-family: "Montserrat Bold", "Arial", sans-serif;
   color: $basic-purple;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
 }
 
 .main-footer__list {
@@ -100,7 +105,7 @@
 }
 
 .main-footer__item {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .main-footer__link {

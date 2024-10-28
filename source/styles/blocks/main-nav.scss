@@ -14,10 +14,11 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 20px;
+    gap: 22px;
     width: 100%;
   }
 }
@@ -27,9 +28,21 @@
   padding: 0;
 }
 
+.main-nav__item--current {
+  padding-bottom: 0;
+  color: $basic-purple;
+}
+
+.main-nav__item--current::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: $basic-purple;
+}
+
 .main-nav__item-link {
   display: block;
-  padding: 32px 20px;
+  padding: 30px 20px;
 
   text-align: center;
   color: $basic-black;
@@ -37,15 +50,4 @@
   text-decoration: none;
 }
 
-.main-nav__item-link--current {
-  padding-bottom: 0;
-  color: $basic-purple;
-}
 
-.main-nav__item-link--current::after {
-  content: "";
-  display: block;
-  height: 2px;
-  margin-top: 30px;
-  background-color: $basic-purple;
-}
