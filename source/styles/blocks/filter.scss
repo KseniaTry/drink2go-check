@@ -23,8 +23,12 @@
   margin-top: 10px;
   margin-bottom: 35px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
   }
 }
 
@@ -105,11 +109,11 @@
   transform: translate(-50%, -50%);
 }
 
-.filter__milk-input:checked + .filter__custom-radio::before {
+.filter__milk-input:checked+.filter__custom-radio::before {
   display: block;
 }
 
-.filter__milk-input:disabled + .filter__custom-radio {
+.filter__milk-input:disabled+.filter__custom-radio {
   border: 2px solid $basic-light-gray;
 }
 
@@ -145,6 +149,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+  }
+
 }
 
 .filter__reset {
@@ -153,5 +162,9 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
   }
 }
